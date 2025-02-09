@@ -1,0 +1,19 @@
+To fix the issues, ensure that:
+
+1. The parent element has explicitly defined dimensions (width or height) for percentage-based calculations in `calc()` to work correctly.
+2. Units are used consistently within the `calc()` function. Avoid mixing different units such as percentages and pixels without appropriate conversion.  If mixing is necessary, ensure calculations are done correctly and consistently.
+3. Carefully check the browser's developer tools to examine the calculated values and identify discrepancies or unexpected values.  This helps pinpoint where the calculation goes wrong.
+
+Here's an example of a corrected CSS rule:
+
+```css
+.container {
+  width: 500px; /* Explicit width for the parent */
+}
+
+.element {
+  width: calc(100% - 20px);
+}
+```
+
+In this corrected version, the `.container` has a defined width.  This allows `calc(100% - 20px)` to produce the expected result for the `.element` width.
