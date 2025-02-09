@@ -1,0 +1,1 @@
+This repository demonstrates a common issue encountered when using the CSS `calc()` function. The `bug.css` file showcases code that produces unexpected layout behavior due to inconsistent unit usage and the lack of explicitly defined parent element dimensions. The `bugSolution.css` file offers a corrected version with solutions.
